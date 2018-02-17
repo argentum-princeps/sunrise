@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SunRise</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper" id="main">
+        <div class="welcome container"> <a href="#" class="welcome__logo-link"> <img src="img/logo.png" alt="Sunrise House logo" class="welcome__logo-img"> </a>
+            <h1 class="welcome__heading" style="line-height: 1.5;">SUNRISE HOUSE – КЛУБНЫЙ ДОМ <span class="welcome__heading--small" style="display: block;">«ТЕРРИТОРИЯ ДОСТОЙНЫХ»</span> </h1>
+            <form class="welcome__form form" id='welcome__form'> <input name="name" type="text" class="welcome__form-input form-input" placeholder="Представьтесь" /> <input type="tel" id="tel" name="tel" class="welcome__form-input form-input" placeholder="+38 (___) ___-__-__" /> <button class="welcome__form-submit form-submit">Записаться на просмотр</button>                </form>
+        </div>
+    </div>
+    <section class="benefits container" id="benefits">
+        <h2 class="benefits__heading">ЧЕМ МЫ ЛУЧШЕ?</h2>
+        <div class='description'>
+            <div class="description__info">
+                <h3 class="description__info-title">ОКРУЖЕНИЕ</h3>
+                <p class="description__info-text">Малоквартирный дом «SunRise House» - новая концепция жилого пространства для сообщества успешных людей.</p>
+                <p class="description__info-text">Вы не просто покупаете квадратные метры в центре столицы – Вы попадаете в окружение людей, которые являются лидерами и управляют своей жизнью.</p>
+                <p class="description__info-text">Всего 5 этажей и 34 квартиры по адресу переулок Кудряшова, 10-Г. </p>
+                <p class="description__info-text">Ваши соседи – люди одного с Вами круга и статуса.</p>
+            </div>
+            <div class="description__image"></div>
+        </div>
+        <div class='description--reverse'>
+            <div class="description__image--reverse"></div>
+            <div class="description__info--reverse">
+                <h3 class="description__info-title">КОМФОРТ</h3>
+                <p class="description__info-text">Индивидуальный подземный паркинг на 34 паркоместа – неоспоримое преимущество для комфортной жизни в центре мегаполиса.</p>
+                <p class="description__info-text">Охраняемый закрытый двор – дополнительная гарантия уюта и безопасности.</p>
+            </div>
+        </div>
+        <div class='description'>
+            <div class="description__info">
+                <h3 class="description__info-title">РАСПОЛОЖЕНИЕ</h3>
+                <p class="description__info-text">Удобное местонахождение в статусном районе столицы – рядом есть все для комфортной жизни и отдыха: парковая зона, городская и частная школы, больница, спортивный комплекс, ТЦ «КОНТИНЕНТ», ТРЦ «ШОПИНГ МОЛЛ», кинотеатр «Баттерфляй Ультрамарин»</p>
+                <p
+                    class="description__info-text">М «Вокзальная» –10 минут пешком</p>
+                    <p class="description__info-text">М «Университет» – 15 минут пешком</p>
+                    <p class="description__info-text">Соломенский парк – 5 минут пешком</p>
+            </div>
+            <div class="description__image--third"></div>
+        </div>
+        <style>
+            .addons{
+    display: -webkit-flex;
+     display: -moz-flex;
+     display: -ms-flex;
+     display: -o-flex;
+     display: flex;
+     justify-content: space-between;
+     font-family: "Roboto",sans-serif;
+}
+.addon{
+    text-align: center;
+     width: 25%;
+     border-right: 1px solid #D6D6D6;
+     padding: 10px 30px 20px;
+}
+.addon:first-of-type{
+    /*margin-right: 30px;
+    */
+    /*border-right: 1px solid #ccc;
+    */
+     padding-left: 0;
+}
+.addon:last-of-type{
+    /*margin-right: 30px;
+    */
+     padding-right:0;
+     border-right: 0;
+}
+.addon__image-block{
+    height: 150px;
+     display: -webkit-flex;
+     display: -moz-flex;
+     display: -ms-flex;
+     display: -o-flex;
+     display: flex;
+     -ms-align-items: center;
+     align-items: center;
+     justify-content: center;
+}
+.addon__image{
+    /*min-height: 120px;
+    */
+}
+.addon__desc{
+}
+.vip{
+    display: -webkit-flex;
+     display: -moz-flex;
+     display: -ms-flex;
+     display: -o-flex;
+     display: flex;
+     padding: 25px 60px 25px 30px;
+     background: linear-gradient(164.21deg, rgba(255, 255, 255, 0.23) -5.33%, rgba(255, 255, 255, 0) 75.34%), linear-gradient(0deg, #1F1F1F, #1F1F1F);
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.45);
+     border-radius: 20px;
+     margin-top: 50px;
+     color:white;
+     font-family: "Roboto",sans-serif;
+     -ms-align-items: center;
+     align-items: center;
+     font-style: italic;
+     font-weight: 300;
+     line-height: 28px;
+     font-size: 20px;
+     letter-spacing: .5px;
+}
+.vip__icon{
+    margin-right: 25px;
+}
+@media screen and (max-width: 1200px){
+    .addon{
+        padding: 10px 20px 20px!important;
+    }
+    .vip{
+        margin: 50px 30px;
+    }
+}
+@media screen and (max-width: 940px){
+    .addons{
+        flex-wrap: wrap;
+    }
+    .addon{
+        width: 50%!important;
+         border: 0;
+    }
+    .vip{
+        line-height: 1.3;
+         font-size: 16px;
+    }
+    .vip__icon{
+        height: 100px;
+    }
+}
+@media screen and (max-width: 580px){
+    .vip{
+        flex-direction: column;
+         text-align: center;
+         padding: 25px 30px;
+         margin-left: 0;
+         margin-right: 0;
+        font-style: normal;
+
+    }
+    .vip__icon{
+        margin-right: 0;
+         margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 580px){
+    .addon{
+        width: 100%!important;
+         margin-bottom: 20px;
+    }
+    .addon__image-block{
+        height: auto;
+         margin-bottom: 10px;
+    }
+    .vip{
+        margin:0;
+    }
+}
+@media screen and (max-width: 460px){
+    .addon{
+        font-size: 14px;
+    }
+    .vip{
+        font-size: 14px;
+    }
+}
+
+        </style>
+        <div class="addons">
+            <div class="addon">
+                <div class="addon__image-block"> <img src="img/shindler.png" alt="" class="addon__image"> </div>
+                <p class="addon__desc">Бесшумный лифт от швейцарской компании Schindler</p>
+            </div>
+            <div class="addon">
+                <div class="addon__image-block"> <img src="img/rehau.png" alt="" class="addon__image"> </div>
+                <p class="addon__desc">Энергосберегающие оконные системы REHAU</p>
+            </div>
+            <div class="addon">
+                <div class="addon__image-block"> <img src="img/smarthome.svg" alt="" class="addon__image"> </div>
+                <p class="addon__desc">Используя систему «Умный дом», можно управлять домом из смартфона</p>
+            </div>
+            <div class="addon">
+                <div class="addon__image-block"> <img src="img/brickwall.svg" alt="" class="addon__image"> </div>
+                <p class="addon__desc">Внешние стены состоят в полуторного кирпича и утеплителя - минваты</p>
+            </div>
+        </div>
+        <div class="vip"> <img src="img/vipicon.png" alt="" class="vip__icon">
+            <p class="vip__desc">Квартиры VIP-уровня на верхних этажах имеют панорамные остекление и просторные открытые террасы, где можно устраивать барбекю, принимать солнечные ванны и любоваться великолепным видом на город.</p>
+        </div>
+    </section>
+    <section class="layout">
+        <div class="container">
+            <h2 class="layout__heading">ПЛАНИРОВКИ</h2>
+            <p class="layout__text">Успейте забронировать свою квартиру в клубном доме «SunRise House»!</p>
+            <ul class="layout__list">
+                <li class="layout__list-item"> <button data-remodal-target="modal" class="layout__btn"> <img src="img/1.png" alt="" class="layout_btn-img"> </button>
+                    <h3 class="layout__list-item-title">Gold</h3>
+                </li>
+                <li class="layout__list-item"> <button data-remodal-target="modal2" class="layout__btn"> <img src="img/2.png" alt="" class="layout_btn-img"> </button>
+                    <h3 class="layout__list-item-title">Platinum</h3>
+                </li>
+                <li class="layout__list-item"> <button data-remodal-target="modal3" class="layout__btn"> <img src="img/3.png" alt="" class="layout_btn-img"> </button>
+                    <h3 class="layout__list-item-title--two-rows">Индивидуальная планировка</h3>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        <div>
+            <h2 class="modal-title" id="modal1Title">Планировки Gold</h2> <img class="modal-slider" id="modal1Desc" src="img/slider.png"> </div><button data-remodal-target="modal4" class="remodal-button">Узнать стоимость</button></div>
+    <div class="remodal" data-remodal-id="modal2" role="dialog"
+        aria-labelledby="modal2Title" aria-describedby="modal2Desc"> <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        <div>
+            <h2 class="modal-title" id="modal2Title">Планировки Platinum</h2> <img class="modal-slider" id="modal2Desc" src="img/slider.png"> </div><button data-remodal-target="modal5" class="remodal-button show-price">Узнать стоимость</button> </div>
+    <div class="remodal remodal3" data-remodal-id="modal3"
+        role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        <div>
+            <h2 class="modal-title modal3-title" id="modal3Title">Хотите свою планировку?</h2>
+            <p class="modal-desk">Свяжитесь с нами и мы обсудим индивидуальный вариант</p>
+            <form class="modal__form form">
+                <p class="modal__input-name">Ваше имя<br><input name="name" type="text" class="modal__form-input form-input" placeholder="Представьтесь" /></p>
+                <p class="modal__input-name">Номер телефона<br><input type="tel" id="tel-third" name="tel" class="modal__form-input form-input" placeholder="+38 (___) ___-__-__" /></p><input name="plan" type="text" hidden value="Индивидуально"> <button class="remodal-button form-submit modal__form-submit">Отправить заявку</button>                </form>
+        </div>
+    </div>
+    <div class="remodal remodal4" data-remodal-id="modal4" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        <div>
+            <h2 class="modal-title modal3-title" id="modal3Title">Хотите узнать стоимость?</h2>
+            <p class="modal-desk">Оставьте контакты и мы свяжемся с вами в ближайшее время</p>
+            <form class="modal__form form">
+                <p class="modal__input-name">Ваше имя<br><input name="name" type="text" class="modal__form-input form-input" placeholder="Представьтесь" /></p>
+                <p class="modal__input-name">Номер телефона<br><input type="tel" id="tel-third" name="tel" class="modal__form-input form-input" placeholder="+38 (___) ___-__-__" /></p><input name="plan" type="text" hidden value="Gold"> <button class="remodal-button form-submit modal__form-submit">Отправить заявку</button>                </form>
+        </div>
+    </div>
+    <div class="remodal remodal5" data-remodal-id="modal5" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        <div>
+            <h2 class="modal-title modal3-title" id="modal3Title">Хотите узнать стоимость?</h2>
+            <p class="modal-desk">Оставьте контакты и мы свяжемся с вами в ближайшее время</p>
+            <form class="modal__form form">
+                <p class="modal__input-name">Ваше имя<br><input name="name" type="text" class="modal__form-input form-input" placeholder="Представьтесь" /></p>
+                <p class="modal__input-name">Номер телефона<br><input type="tel" id="tel-third" name="tel" class="modal__form-input form-input" placeholder="+38 (___) ___-__-__" /></p><input name="plan" type="text" hidden value="Platinum"> <button class="remodal-button form-submit modal__form-submit">Отправить заявку</button>                </form>
+        </div>
+    </div>
+    <div class="booking">
+        <div class="container">
+            <h2 class="booking__heading">Успейте забронировать свою квартиру в клубном доме «SunRise House»!</h2>
+            <form class="booking__form form"> <input name="name" type="text" class="booking__form-input form-input" placeholder="Представьтесь" /> <input type="tel" id="tel-second" name="tel" class="booking__form-input form-input" placeholder="+38 (___) ___-__-__" /> <button class="booking__form-submit form-submit">Записаться на просмотр</button>                </form>
+        </div>
+    </div>
+    <section id="about-us" class="about-us container">
+        <div class="about-us__contact">
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.4727195188766!2d30.488504315730808!3d50.43229497947286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cee910299847%3A0x8876a31d82c8c81e!2z0L_QtdGALiDQmtGD0LTRgNGP0YjQvtCy0LAsIDEwLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1515160702145"
+                class="about-us__map" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="about-us__contact-info" id="contact">
+                <h4 class="contact-info__title">Контактная информация</h4>
+                <ul class="contact-info__list">
+                    <li class="contact-info__list-item"> <img src="img/icons/lo.svg" alt="location" class="icon">
+                        <p class="contact-info__text"> <span class="contact-info__text--bold">Офис продаж</span> <a style='text-decoration: underline;' href="https://www.google.com.ua/maps/place/%D0%BF%D0%B5%D1%80.+%D0%9A%D1%83%D0%B4%D1%80%D1%8F%D1%88%D0%BE%D0%B2%D0%B0,+10,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.432295,30.4885043,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cee910299847:0x8876a31d82c8c81e!8m2!3d50.432295!4d30.490693"
+                                class="contact-info__text-link">Киев, переулок Кудряшова 10 Г</a> </p>
+                    </li>
+                    <li class="contact-info__list-item"> <img src="img/icons/phone.svg" alt="phone number" class="icon"> <a style='text-decoration: underline;' href="tel:0800303203" class="contact-info__text">0-800-303-203</a> </li>
+                    <li class="contact-info__list-item"> <img src="img/icons/email.svg" alt="e-mail" class="icon"> <a style='text-decoration: underline;' href="mailto:info@sunrise-house.com.ua" class="contact-info__text">info@sunrise-house.com.ua</a> </li>
+                </ul>
+                <ul class="contact-info__social">
+                    <li><a href="https://www.facebook.com/%D0%9A%D0%BB%D1%83%D0%B1%D0%BD%D1%8B%D0%B9-%D0%B4%D0%BE%D0%BC-SunRise-House-%D0%BD%D0%B0-%D0%9A%D1%83%D0%B4%D1%80%D1%8F%D1%88%D0%BE%D0%B2%D0%B0-1616423001754121" class="social-icon"><img src="img/icons/facebook.svg" alt=""></a></li>
+                    <li><a href="#" class="social-icon"><img src="img/icons/telegram.svg" alt=""></a></li>
+                    <li><a href="#" class="social-icon"><img src="img/icons/instagram.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="footer--gray-border">
+        <div class="footer container">
+            <p class="footer__text">© All rights reserved. Разработано <a href="http://ujay.net/" class="uJay-link">uJay co</a>.</p>
+            <nav class="footer__nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item"> <a href="#main" class="nav__link">Главная</a> </li>
+                    <li class="nav__list-item"> <a href="#benefits" class="nav__link">Преимущества</a> </li>
+                    <li class="nav__list-item"> <a href="#about-us" class="nav__link">О нас</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <div class="success-alert">
+        <div class="icon"><svg width="35" height="35" viewBox="0 0 76 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Vector</title><desc>Created using Figma</desc><path fill='#fff' d="M 23.5 51.7C 24.4 52.6 25.7 53.2 27 53.2C 28.3 53.2 29.6 52.6 30.6 51.7L 73.7 8.6C 75.7 6.6 75.7 3.5 73.7 1.5C 71.7 -0.5 68.6 -0.5 66.6 1.5L 27 41.1L 8.6 22.6C 6.6 20.6 3.5 20.6 1.5 22.6C -0.5 24.6 -0.5 27.7 1.5 29.7L 23.5 51.7Z"/></svg></div>Мы
+        сохранили ваши контакты и свяжемся с вами в ближайшее время!</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/maskinput.js"></script>
+
+    <script>
+        $("form").submit(function(event) {
+            event.preventDefault();
+            var name = $(this).find("input[name='name']").val();
+            var phone = $(this).find("input[name='tel']").val();
+            var isSomethingWrong = false;
+            var oldSubmitText = $(this).find(".form-submit").text();
+            if (oldSubmitText == "Заполните поля") return false;
+            if (name === undefined) {
+                $(this).find("input[name='name']").addClass("wrong");
+                isSomethingWrong = true;
+            } else if (name.length < 2) {
+                $(this).find("input[name='name']").addClass("wrong");
+                isSomethingWrong = true;
+            }
+        });
+    </script>
+    <script>
+        $(window).scroll(function(event) {
+            var scroll = $(window).scrollTop();
+            var isScrolled = false;
+            if (scroll + $(window).height() * 3 / 4 > $("#about-us").offset().top && !isScrolled) {
+                isScrolled = true;
+                $('.counter').each(function() {
+                    var $this = $(this),
+                        countTo = $this.attr('data-count');
+                    $({countNum: $this.text()}).animate({
+                                countNum: countTo
+                            }, {
+                                duration: 2000,
+                                easing: 'linear',
+                                step: function() {
+                                    $this.text(Math.floor(this.countNum));
+                                },
+                                complete: function() {
+                                        $this.text(this.countNum);
+                                    }
+                                })
+                });
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        jQuery(function($){
+        	$("input[name='tel']").mask("+38 (999) 999-99-99");
+        });
+    </script>
+    <script src="js/remodal.js"></script>
+    <script>
+        $(document).on('opening', '.remodal', function() {
+		     console.log('opening');
+		 });
+		 $(document).on('opened', '.remodal', function() {
+		     console.log('opened');
+		 });
+		 $(document).on('closing', '.remodal', function(e) {
+		     console.log('closing' + (e.reason ? ', reason: ' + e.reason : ''));
+		 });
+		 $(document).on('closed', '.remodal', function(e) {
+		     console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
+		 });
+		 $(document).on('confirmation', '.remodal', function() {
+		     console.log('confirmation');
+		 });
+		 $(document).on('cancellation', '.remodal', function() {
+		     console.log('cancellation');
+		 });
+  // Usage: // $(function(){// // // In this case the initialization function returns the already created instance // var inst=$('[data-remodal-id=modal]').remodal(); // // inst.open(); // inst.close(); // inst.getState(); // inst.destroy(); //}); // The second way to initialize:
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+</body>
+
+</html>
